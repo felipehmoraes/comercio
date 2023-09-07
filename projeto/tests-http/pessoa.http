@@ -1,0 +1,20 @@
+
+@URL_BASE=http://localhost:8080
+
+### Obter todas as pessoas
+GET {{URL_BASE}}/pessoa/page?=size=20&page=2&sort=email&direction=DESC
+
+### Obter pessoa pelo ID
+GET {{URL_BASE}}/pessoa/644175b2-1d00-4ea9-bb42-732d3b4c544e
+
+
+### Cadastrar 1 pessoa
+POST {{URL_BASE}}/pessoa
+Content-Type: application/json
+
+{   
+    "nome":"rodrigo",
+    "email":"rodrigo@bol.com.br",
+    "nascimento":"1980-01-01T00:00"
+}
+
